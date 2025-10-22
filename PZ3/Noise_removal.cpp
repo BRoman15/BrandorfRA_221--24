@@ -55,13 +55,6 @@ class PGMReader{
                     file >> arr[row][cols];
                 }
             }
-
-            // for (int row = 0; row < height; row++){
-            //     for (int cols = 0; cols < width; cols++){
-            //         cout << arr[row][cols] << " ";
-            //     }
-            //     cout << endl;
-            // }
         }
 
         ~PGMReader(){
@@ -119,6 +112,6 @@ class PGMReader{
 
 
 int main(){
-    PGMReader A("C://VSCod//PZ3//orig_shum_P2.pgm","filtered_image.pgm");
+    PGMReader A("C://VSCod//PZ3//shum_image//6_level_shum.pgm","image//filtered_image5_level6.pgm");
     A.median_processing(3);
 }
